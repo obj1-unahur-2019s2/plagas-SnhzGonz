@@ -1,0 +1,17 @@
+import elementos.*
+import plagas.*
+
+describe "test de plagas"{
+	var plagaCucarachas = new Cucarachas(pesoPromedio = 10, poblacion=20)
+	var plagaGarrapatas = new Garrapatas(poblacion= 30)
+	var plagasPulgas = new Pulgas(poblacion=20)
+	
+	var casa = new Hogar(nivelDeMugre = 10, confortQueOfrece = 4)
+	var huerta = new Huerta(capacidadDeProduccion = 200)
+	var perro = new Mascota(nivelDeSalud = 300)
+	
+	test "garrapatas atacan perros"{
+		plagaGarrapatas.ataque(perro)
+		assert
+	}
+}
